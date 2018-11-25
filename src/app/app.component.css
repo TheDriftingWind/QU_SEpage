@@ -2,6 +2,11 @@
 background-color: #08164E;
 }
 
+.bordered{
+  margin: 10px 20px;
+  border: 1px solid black;
+}
+
 footer {
     width: 100%;
     /* position: fixed; */
