@@ -12,4 +12,10 @@ export class FacultyComponent implements OnInit {
   ngOnInit() {
   }
 
+  selected : number = 0;
+
+  show(num: number) {
+    this.selected = num
+  }
+
 }
