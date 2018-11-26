@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-navy">
+<nav class="navbar navbar-expand-lg navbar-dark bg-navy" style="z-index: 9999;">
   <a class="navbar-brand" href="#">
     <img src="./assets/images/qu-logo.png" alt="qu-logo" width="200" height="68" />
     <span style="font-size:18pt;"> Software Engineering</span>
@@ -8,16 +8,16 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse show" [ngClass]="{ 'show': navbarOpen } ">
+  <div class="collapse navbar-collapse show" [ngClass]="{ 'show': navbarOpen }" id="navbarNav">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active ">
-        <a class="nav-link" href="#">Program Overview</a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Program Overview</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Faculty</a>
+        <a class="nav-link" routerLink="/faculty">Faculty</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Curriculum</a>
+        <a class="nav-link" routerLink="/curriculum">Curriculum</a>
       </li>
       <li class="nav-item" role="presentation" routerLinkActive="active">
         <a class="nav-link" routerLink="facilities">Facilities</a>

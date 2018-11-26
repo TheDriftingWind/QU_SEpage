@@ -1,0 +1,140 @@
+<div class="bordered" [hidden]="!(selected == 0)">
+  <h3 style="text-align: center;">Faculty</h3>
+  <div class="row">
+    <div class="col-md-6 mt20" style="text-align: center">
+      <img src="../assets/images/faculty/ruby.PNG" alt="Prof. Ruby">
+      <h4>Prof. Ruby ElKharboutly</h4>
+      <button class="btn btn-primary" (click)="show(1)">View Profile</button>
+    </div>
+    <div class="col-md-6 mt20" style="text-align: center">
+      <img src="../assets/images/faculty/christov.PNG" alt="Prof. Christov">
+      <h4>Prof. Stefan Christov</h4>
+      <button class="btn btn-primary" (click)="show(2)">View Profile</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mt20" style="text-align: center">
+      <img src="../assets/images/faculty/blake.PNG" alt="Prof. Blake">
+      <h4>Prof. Jonathan Blake</h4>
+      <button class="btn btn-primary" (click)="show(3)">View Profile</button>
+    </div>
+    <div class="col-md-6 mt20" style="text-align: center">
+      <img src="../assets/images/faculty/hoffman.PNG" alt="Prof. Hoffman">
+      <h4>Prof. Mark Hoffman</h4>
+      <button class="btn btn-primary" (click)="show(4)">View Profile</button>
+    </div>
+  </div>
+</div>
+
+<div class="faculty_profile" [hidden]="!(selected == 1)">
+  <button class="btn btn-primary float-right" (click)="show(0)">Back</button>
+  <h3>Ruby ElKharboutly</h3>
+  <h4>Assistant Professor of Software Engineering</h4>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div>
+        <h5>Education</h5>
+        <p>
+          BS, MS, American University in Cairo; PhD, University of Connecticut
+        </p>
+      </div>
+      <div>
+        <h5>Bio</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="../assets/images/faculty/ruby.PNG" alt="Prof. Ruby">
+    </div>
+  </div>
+  <h5>Contact</h5>
+  <p>Ruby.ElKharboutly@quinnipiac.edu</p>
+</div>
+<div class="faculty_profile" [hidden]="!(selected == 2)">
+  <button class="btn btn-primary float-right" (click)="show(0)">Back</button>
+  <h3>Stefan Christov</h3>
+  <h4>Assistant Professor of Software Engineering</h4>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div>
+        <h5>Education</h5>
+        <p>
+          BS, SUNY College Brockport; MS,
+          PhD, University of Massachusetts-Amherst
+        </p>
+      </div>
+      <div>
+        <h5>Bio</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="../assets/images/faculty/christov.PNG" alt="Prof. Christov">
+    </div>
+  </div>
+
+  <h5>Contact</h5>
+  <p>Stefan.Christov@quinnipiac.edu</p>
+</div>
+<div class="faculty_profile" [hidden]="!(selected == 3)">
+  <button class="btn btn-primary float-right" (click)="show(0)">Back</button>
+  <h3>Jonathan Blake</h3>
+  <h4>Porgram Director & Professor of Computer Science and Software Engineering</h4>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div>
+        <h5>Education</h5>
+        <p>
+          BSE, Princeton University; MS,
+          PhD, Northwestern University
+        </p>
+      </div>
+      <div>
+        <h5>Bio</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="../assets/images/faculty/blake.PNG" alt="Prof. Blake">
+    </div>
+  </div>
+  <h5>Contact</h5>
+  <p>Jonathan.Blake@quinnipiac.edu</p>
+</div>
+<div class="faculty_profile" [hidden]="!(selected == 4)">
+  <button class="btn btn-primary float-right" (click)="show(0)">Back</button>
+  <h3>Mark Hoffman</h3>
+  <h4>Professor of Computer Science and Software Engineering</h4>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div>
+        <h5>Education</h5>
+        <p>
+          BS, MS, University of New Haven;
+          PhD, Polytechnic University Brooklyn
+        </p>
+      </div>
+      <div>
+        <h5>Bio</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="../assets/images/faculty/hoffman.PNG" alt="Prof. Hoffman">
+    </div>
+  </div>
+  <h5>Contact</h5>
+  <p>Mark.Hoffman@quinnipiac.edu</p>
+</div>
