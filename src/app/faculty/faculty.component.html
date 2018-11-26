@@ -1,10 +1,10 @@
 <div style="display: flex;">
   <button class="btn btn-link" (click)="show(0)">Faculty</button>
-  <button [hidden]="(selected == 0)" class="btn btn-link"> > </button>
-  <button class="btn btn-link" [hidden]="!(selected == 1)">Ruby ElKharboutly</button>
-  <button class="btn btn-link" [hidden]="!(selected == 2)">Stefan Christov</button>
-  <button class="btn btn-link" [hidden]="!(selected == 3)">Jonathan Blake</button>
-  <button class="btn btn-link" [hidden]="!(selected == 4)">Mark Hoffman</button>
+  <button [hidden]="(selected == 0)" class="btn btn-link" style="color: black" disabled> > </button>
+  <button class="btn btn-link" [hidden]="!(selected == 1)" style="color: black" disabled>Ruby ElKharboutly</button>
+  <button class="btn btn-link" [hidden]="!(selected == 2)" style="color: black" disabled>Stefan Christov</button>
+  <button class="btn btn-link" [hidden]="!(selected == 3)" style="color: black" disabled>Jonathan Blake</button>
+  <button class="btn btn-link" [hidden]="!(selected == 4)" style="color: black" disabled>Mark Hoffman</button>
 </div>
 
 <div class="bordered p-3 mb-5 rounded mt-5" [hidden]="!(selected == 0)">
