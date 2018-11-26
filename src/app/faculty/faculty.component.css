@@ -1,12 +1,12 @@
 .faculty_profile{
   margin: auto;
-  border: 1px solid black;
+  background-color: white;
   padding: 5% 15%;
 }
 
 .bordered{
   margin: 25px 40px;
-  border: 1px solid black;
+  background-color: white;
 }
 
 .mt20{
