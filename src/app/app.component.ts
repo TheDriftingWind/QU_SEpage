@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'QUSEpage';
+  navbarOpen = false;
+
+ toggleNavbar() {
+   this.navbarOpen = !this.navbarOpen;
+ }
 }

@@ -39,3 +39,13 @@ footer {
 .sidenav a:hover {
     color: #f1f1f1;
 }
+
+.dropdown-menu{
+    display:none;
+}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown-item, .dropdown-menu{
+    background-color: #08164E;
+}

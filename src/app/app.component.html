@@ -4,9 +4,12 @@
     <img src="./assets/images/qu-logo.png" alt="qu-logo" width="200" height="68" />
     <span style="font-size:18pt;"> Software Engineering</span>
   </a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+  <div class="collapse navbar-collapse show" [ngClass]="{ 'show': navbarOpen }" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" routerLink="/">Program Overview</a>
       </li>
@@ -16,14 +19,18 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/curriculum">Curriculum</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Facilities</a>
+      <li class="nav-item" role="presentation" routerLinkActive="active">
+        <a class="nav-link" routerLink="facilities">Facilities</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Student Spotlight</a>
+      <li class="nav-item dropdown" role="presentation" routerLinkActive="active">
+        <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Spotlight</a>
+        <div class="dropdown-menu" aria-labelledby="studentspotlightmenu">
+                  <a class="dropdown-item nav-link" routerLink="currentstudents">Current Students</a>
+                  <a class="dropdown-item nav-link" routerLink="alumni">Alumni</a>
+                </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Our Work</a>
+      <li class="nav-item" role="presentation" routerLinkActive="active">
+        <a class="nav-link" routerLink="ourwork">Our Work</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Apply Now</a>
