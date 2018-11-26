@@ -1,3 +1,12 @@
+<div style="display: flex;">
+  <button class="btn btn-link" (click)="show(0)">Faculty</button>
+  <button [hidden]="(selected == 0)" class="btn btn-link"> > </button>
+  <button class="btn btn-link" [hidden]="!(selected == 1)">Ruby ElKharboutly</button>
+  <button class="btn btn-link" [hidden]="!(selected == 2)">Stefan Christov</button>
+  <button class="btn btn-link" [hidden]="!(selected == 3)">Jonathan Blake</button>
+  <button class="btn btn-link" [hidden]="!(selected == 4)">Mark Hoffman</button>
+</div>
+
 <div class="bordered p-3 mb-5 rounded mt-5" [hidden]="!(selected == 0)">
   <h1 style="text-align: center;">Faculty</h1>
   <p>Quinnipiac’s Software Engineering professors are committed to the personal and professional success of every student. While passionate scholars and accomplished in their own fields, teaching is the number one priority. Small class sizes, accessible professors and a close-knit community create the kind of supporting, enriching environment that is rare. We are personally invested in seeking ways to help our students develop into strong, certified, leading professionals.</p>
@@ -26,7 +35,6 @@
     </div>
   </div>
 </div>
-
 <div class="faculty_profile p-3 mb-5 rounded col-md-11 mt-5" [hidden]="!(selected == 1)">
   <button class="btn btn-primary float-right" (click)="show(0)">Back</button>
   <h3>Ruby ElKharboutly</h3>
