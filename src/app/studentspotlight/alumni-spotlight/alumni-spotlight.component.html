@@ -1,37 +1,48 @@
 <div class="sidenav">
   <a [routerLink]="['.']" fragment="overview">Overview</a>
-  <a [routerLink]="['.']" fragment="student1">Sam Smith</a>
-  <a [routerLink]="['.']" fragment="student2">Gavin Wilson</a>
-  <a [routerLink]="['.']" fragment="student3">Dana Thompson</a>
-  <a [routerLink]="['.']" fragment="student4">Mandy Harrison</a>
+  <a [routerLink]="['.']" fragment="student1">Sarah Johnson</a>
+  <a [routerLink]="['.']" fragment="student2">Tom Hanks</a>
 </div>
 
-<div id="overview" class="container p-3 mt-5 mb-5 bg-white rounded">
+<ul class="nav nav-tabs container bg-white">
+  <li class="nav-item" role="presentation" routerLinkActive="active">
+    <a class="nav-link" routerLink="/currentstudents">Current Students</a>
+  </li>
+  <li class="nav-item" role="presentation" routerLinkActive="active">
+    <a class="nav-link active" routerLink="/alumni">Alumni</a>
+  </li>
+
+</ul>
+<div id="overview" class="container p-3 mb-5 bg-white rounded">
   <h1 class="text-center">Alumni</h1>
 
   <!--Overview section-->
   <div class="row">
     <div class="col-md-12">
       <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Read about the many accomplishments and experience of our alumni who have graduated from our Software Engineering program.
       </p>
     </div>
   </div>
 </div>
   <!--Student 1 section-->
   <div class="container p-3 mb-5 bg-white rounded">
-  <h2 id="student1" class="text-center">Sam Smith</h2>
-  <h4 class="text-center">Project/Accomplishment</h4>
+  <h2 id="student1" class="text-center">Sarah Johnson</h2>
+  <h4 class="text-center">Working at Google</h4>
   <div class="row">
-    <div class="col-md-8">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class= "mx-auto">
+      <p class="lead">
+        <strong>Hometown:</strong> Bridgeport, Connecticut
+        <br /><strong>Graduation Date:</strong> May 2015
+        <br /><strong>Company:</strong> Google
+        <br /><strong>Department:</strong> Engineering Department
+        <br /><strong>Current Position:</strong> Software Engineer
       </p>
     </div>
     <div class="col-md-4 text-center">
       <figure class="figure">
-  <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-  <figcaption class="figure-caption">Class of '15</figcaption>
+  <img src="../../assets/images/studentspotlight/alumni/sarah.jpg" class="figure-img img-fluid rounded studentimg" alt="A generic square placeholder image with rounded corners in a figure.">
+  <figcaption class="figure-caption">Class of '14, Software Engineering</figcaption>
 </figure>
     </div>
   </div>
@@ -50,26 +61,29 @@
     </div>
     <div class="col-md-4 text-center">
       <figure class="figure">
-    <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+    <img src="../../assets/images/studentspotlight/alumni/google.png" class="figure-img img-fluid rounded studentimg" alt="A generic square placeholder image with rounded corners in a figure.">
     </figure>
       </div>
   </div>
 </div>
   <!--Student 2 section-->
   <div class="container p-3 mb-5 bg-white rounded">
-  <h2 id="student2" class="text-center">Gavin Wilson</h2>
-  <h4 class="text-center">Project/Accomplishment</h4>
+  <h2 id="student2" class="text-center">Tom Hanks</h2>
+  <h4 class="text-center">Working at Cigna</h4>
   <div class="row">
-    <div class="col-md-8">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class= "mx-auto">
+      <p class="lead">
+        <strong>Hometown:</strong> Long Island, New York
+        <br /><strong>Graduation Date:</strong> May 2016
+        <br /><strong>Company:</strong> Cigna
+        <br /><strong>Department:</strong> Software Engineering and Innovation
+        <br /><strong>Current Position:</strong> Software Engineer
       </p>
     </div>
     <div class="col-md-4 text-center">
       <figure class="figure">
-    <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+    <img src="../../assets/images/studentspotlight/alumni/tom.jpg" class="figure-img img-fluid rounded studentimg" alt="A generic square placeholder image with rounded corners in a figure.">
+    <figcaption class="figure-caption">Class of 16', Software Engineering</figcaption>
     </figure>
       </div>
   </div>
@@ -88,87 +102,11 @@
     </div>
     <div class="col-md-4 text-center">
       <figure class="figure">
-    <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+    <img src="../../assets/images/studentspotlight/alumni/cigna.jpg" class="figure-img img-fluid rounded studentimg" alt="A generic square placeholder image with rounded corners in a figure.">
+    <figcaption class="figure-caption">Cigna employees at their biking event.</figcaption>
     </figure>
       </div>
   </div>
 </div>
 
-  <!--Student 3 section-->
-  <div class="container p-3 mb-5 bg-white rounded">
-  <h2 id="student3" class="text-center">Dana Thompson</h2>
-  <h4 class="text-center">Project/Accomplishment</h4>
-  <div class="row">
-    <div class="col-md-8">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="col-md-4 text-center">
-      <figure class="figure">
-    <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-    </figure>
-      </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="col-md-4 text-center">
-      <figure class="figure">
-    <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-    </figure>
-      </div>
-  </div>
-</div>
-    <!--Student 4 section-->
-    <div class="container p-3 mb-5 bg-white rounded">
-  <h2 id="student4" class="text-center">Mandy Harrison</h2>
-  <h4 class="text-center">Project/Accomplishment</h4>
-  <div class="row">
-    <div class="col-md-8">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="col-md-4 text-center">
-      <figure class="figure">
-    <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-    </figure>
-      </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8">
-      <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="col-md-4 text-center">
-      <figure class="figure">
-    <img src="https://via.placeholder.com/150" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-    </figure>
-      </div>
-  </div>
-  </div>
   <!--End of student sections -->

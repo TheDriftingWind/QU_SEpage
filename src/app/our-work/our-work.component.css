@@ -10,7 +10,7 @@
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 10%;
+    padding-top: 12%;
 }
 
 .sidenav a {
@@ -23,4 +23,9 @@
 
 .sidenav a:hover {
     color: #f1f1f1;
+}
+
+.studentimg {
+width: 200px;
+height: 200px;
 }

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'
 import { CarouselModule } from 'ngx-bootstrap/carousel'
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProgramOverviewComponent } from './program-overview/program-overview.component';
@@ -32,7 +33,7 @@ const appRoutes: Routes = [
     CurrentStudentSpotlightComponent,
     AlumniSpotlightComponent,
     OurWorkComponent
-    ],
+      ],
   imports: [
     RouterModule.forRoot(appRoutes),
     CarouselModule.forRoot(),
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, {
       anchorScrolling: 'enabled'
     }),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
