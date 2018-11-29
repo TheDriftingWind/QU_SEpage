@@ -26,6 +26,24 @@
     color: #f1f1f1;
 }
 
+@media (max-width: 600px) {
+  .sidenav {
+    visibility: hidden;
+  }
+
+  .sidenav a {
+    visibility: hidden;
+  }
+
+  .sidenav a:hover {
+    visibility: hidden;
+  }
+
+  .container{
+    margin-left: 0;
+  }
+}
+
 .bordered{
   margin: 25px 40px;
   /* border: 1px solid black; */
