@@ -1,5 +1,5 @@
 <div style="display: flex;">
-  <button class="btn btn-link" (click)="show(0)">Faculty</button>
+  <button class="btn btn-link" (click)="show(0)" [hidden]="(selected == 0)">Faculty</button>
   <button [hidden]="(selected == 0)" class="btn btn-link" style="color: black" disabled> > </button>
   <button class="btn btn-link" [hidden]="!(selected == 1)" style="color: black" disabled>Ruby ElKharboutly</button>
   <button class="btn btn-link" [hidden]="!(selected == 2)" style="color: black" disabled>Stefan Christov</button>
@@ -51,7 +51,10 @@
       <div>
         <h5>Bio</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+          Prof. Ruby ElKharboutly is the instructor for many of the core software engineering courses at Quinnipiac University. She is
+          an experienced and dedicated teacher that is understanding to her students. She is also a proud mother who loves to watch anime shows
+          like My Hero Academia with her kids.
+
         </p>
       </div>
     </div>
@@ -79,7 +82,8 @@
       <div>
         <h5>Bio</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+          Prof. Stefan Christov is a hard working professor who does a lot of help his students. He is an active around Quinnipiac University and
+          can be seen working with the school of nursing as well as playing in the annual students vs. professors soccer game.
         </p>
       </div>
     </div>
@@ -94,7 +98,7 @@
 <div class="faculty_profile p-3 mb-5 rounded col-md-11 mt-5" [hidden]="!(selected == 3)">
   <button class="btn btn-primary float-right" (click)="show(0)">Back</button>
   <h3>Jonathan Blake</h3>
-  <h4>Porgram Director & Professor of Computer Science and Software Engineering</h4>
+  <h4>Program Director & Professor of Computer Science and Software Engineering</h4>
 
   <div class="row">
     <div class="col-md-8">
@@ -108,7 +112,8 @@
       <div>
         <h5>Bio</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+          Prof. Jonathan Blake is a brilliant and experienced professor who does his best to shape the future of his students.
+          He is known for his generosity of giving students snacks and for his many hobbies.
         </p>
       </div>
     </div>
@@ -136,7 +141,8 @@
       <div>
         <h5>Bio</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum arcu nulla, vel congue ipsum gravida dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam arcu ligula, semper tristique ipsum at, mattis volutpat eros. Fusce rhoncus, velit ut lacinia viverra, risus nisl suscipit odio, ut rhoncus mauris arcu id metus. Nunc placerat, lacus dictum auctor bibendum, nisi felis euismod lorem, elementum bibendum ex mauris ut purus. Donec porttitor tortor eget tellus maximus, at fringilla nunc auctor. Phasellus et vulputate nisl. Suspendisse at justo nec eros congue pharetra.
+          Prof. Mark Hoffman is a seasoned professional that has experience in physics as well as computer science in addition
+          to software engineering. He is known to be a fan of hockey and elephant jokes.
         </p>
       </div>
     </div>
